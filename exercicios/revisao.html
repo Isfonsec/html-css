@@ -11,26 +11,38 @@
             color:white;
             font:normal 16pt arial;
         }
-        div#botao{
+
+        nav {
             background-color: white;
-            color: black;
             width: 100px;
             height: 100px;
-            text-align: center;
             border-radius: 10px;
             margin: 20px;
+            position: relative;
+        }
+        nav > div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: black;
+            text-align: center;
+            transform:translate(-50%,-50%)
         }
     </style>
 </head>
 <body>
     <h1>Título da Revisão</h1>
-    <p>Preciso lembrar de tudo.</p>
-    <div id="botao" onclick="clicar()" onmouseout="saiu()">Botão</div>
+    <p>Não clique no botão.</p>
+    <nav>
+        <div id="botao" onclick="clicar()" onmouseout="saiu()">Botão</div>
+    </nav>
 
     <script>
         let botao = document.querySelector('div#botao')
+        let corpo = document.body
         function clicar() {
             botao.innerHTML = 'Clicado'
+            corpo.style.background = 'blue'
         }
         function saiu ()    {
             botao.innerHTML = `Botão`

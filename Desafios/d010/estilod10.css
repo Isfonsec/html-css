@@ -197,6 +197,11 @@ footer a {
     text-decoration: none;
 }
 
+footer a#isfonsec{
+    color: #ffd700;
+    font-weight: bold;
+}
+
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
