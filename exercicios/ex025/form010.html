@@ -7,5 +7,20 @@
 </head>
 <body>
     <h1>Formulário tratando dados</h1>
+
+    <form action="">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="idade.innerHTML= 2025 - Number(iano.value)">
+        </p>
+        
+        <label for="idade">Você tem:</label> <output id="idade">0</output>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+    
 </body>
 </html>
