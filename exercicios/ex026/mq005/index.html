@@ -6,25 +6,40 @@
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/otherdevices.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <aside>
-            <a href="#">Opção 1</a>
-            <a href="#">Opção 2</a>
-            <a href="#">Opção 3</a>
-            <a href="#">Opção 4</a>
-            <a href="#">Opção 5</a>
-        </aside>
+        <span id="burguer"class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
-        <h2>Testando Media Queries</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati nostrum vitae recusandae modi non, sequi nihil vel. Optio eos nemo explicabo? Dolorem dolores dicta blanditiis quia, magnam perferendis dolore!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, minus eligendi ipsam, impedit animi perferendis illo at voluptas reprehenderit labore dolore voluptatem eius! Voluptas error ad voluptates sed at dolores.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam repellendus neque ut iste veniam porro veritatis at, nisi provident non deserunt debitis animi nobis amet officiis iusto sit eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nihil ut veniam libero ullam nesciunt sapiente temporibus rerum non reprehenderit sequi recusandae accusamus eum ducimus provident fuga, molestias iste? Sequi.</p>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati nostrum vitae recusandae modi non, sequi nihil vel. Optio eos nemo explicabo? Dolorem dolores dicta blanditiis quia, magnam perferendis dolore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur odio officiis quae minima sit quasi magnam, consequatur error consectetur dolore, ratione repellendus qui. Labore, tenetur veritatis libero dolorem at rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, minus eligendi ipsam, impedit animi perferendis illo at voluptas reprehenderit labore dolore voluptatem eius! Voluptas error ad voluptates sed at dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatum est fugit dolorum dolorem iste, cumque vero, ea explicabo aliquam pariatur laborum quaerat quam quidem doloribus eum impedit, molestiae recusandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam repellendus neque ut iste veniam porro veritatis at, nisi provident non deserunt debitis animi nobis amet officiis iusto sit eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nihil ut veniam libero ullam nesciunt sapiente temporibus rerum non reprehenderit sequi recusandae accusamus eum ducimus provident fuga, molestias iste? Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo et ullam temporibus voluptas nihil ipsum optio exercitationem! Minus excepturi ipsum eius optio sunt suscipit hic soluta error incidunt ea.</p>
+        </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
