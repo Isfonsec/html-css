@@ -8,7 +8,13 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: lightgray;
+}
+
+header {
+    background-color: rgb(73, 73, 73);
 }
 
 h1 {
@@ -16,3 +22,62 @@ h1 {
     text-align: center;
     padding: 10px;
 }
+
+span {
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#hamburguer {
+    display: none;
+}
+
+menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: gray;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-top: 2px solid rgb(185, 184, 184);
+}
+
+span:hover {
+    background-color: white;
+    color: black;
+}
+
+menu a:hover {
+    background-color: rgb(196, 194, 194);
+}
+
+menu > ul {
+    margin-top: -3px;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px 0px;
+    text-indent: 30px;
+}
+
