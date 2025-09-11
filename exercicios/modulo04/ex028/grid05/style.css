@@ -34,7 +34,7 @@ body {
 }
 
 .caixa2 {
-    grid-row: 2 / span 1;
+    grid-row: 2 / span 7;
     grid-column: 1 / 4;
 }
 

@@ -34,18 +34,15 @@ body {
 }
 
 .caixa2 {
-    grid-row: 2 / span 1;
-    grid-column: 1 / 4;
+    grid-area: 2 / 1 / 7 / 4;
 }
 
 .caixa3 {
-    grid-row: 2 / 4;
-    grid-column: 4 / -1;
+    grid-area: 2 / 4 / 4 / 5;
 }
 
 .caixa4 {
     padding: 5px;
     border: 2px solid blue;
-    grid-row: 4 / 7;
-    grid-column: 4 / 6;
+    grid-area: 4 / 4 / 7 / 7;
 }
